@@ -10,9 +10,9 @@ layout: default
     <div class="post__meta"> 
         <div class="post__meta__category">
             {% for category in page.category %}
-                <p class="post__meta__category__title" style="background: {{ site.category | where: "category", category | map: "hue"}}">{{ site.category | where: "category", category | map: "title"}}</p>
+            <p class="post__meta__category__title" style="background: {{ site.category | where: "category", category | map: "hue"}}">{{ site.category | where: "category", category | map: "title"}}</p>    
             {% else %}
-                <p class="post__meta__category__title">No category</p>
+            <p class="post__meta__category__title">No category</p>
             {% endfor %}
         </div>
         <p class="post__meta__divider">·</p>
